@@ -26,7 +26,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  var user=getCookie("2021Web");
+  var user=getCookie("username");
   console.log(user);
   if (user != "" ) {
     alert("また見てくれてありがとう！" + user);
@@ -41,7 +41,7 @@ function checkCookie() {
 
 function delCookie()
 {
-  document.cookie = "2021Web=; max-age=0; path=/";
+  document.cookie = "username=; max-age=0; path=/";
 }
   
 
