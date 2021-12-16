@@ -7,7 +7,7 @@ function clickCounter() {
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
     } else {
-      localStorage.clickcount = 1;
+      localStorage.clickcount = 1;//初めてアクセスしたとき 1で初期化
     }
     document.getElementById("result").innerHTML = "クリックした回数は " + localStorage.clickcount + " 回";
   } else {
